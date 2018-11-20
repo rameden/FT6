@@ -1,22 +1,21 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import * as React from 'react';
 import './App.css';
+// tslint:disable-next-line:ordered-imports
+import TableofContents from "src/guide/components/tableOfContents";
 
-import logo from './logo.svg';
+class FT6App extends React.Component {
 
-class App extends React.Component {
-  public render() {
+  public render(): JSX.Element {
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <div className="container-fluid">
+          <TableofContents />
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+export default FT6App;
