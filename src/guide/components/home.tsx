@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-class Assembly extends React.Component {
+class Home extends React.Component {
   public render(): JSX.Element {
     return (
       <>
-        <p>Assembly Imported</p>
+        <p>Welcome</p>
       </>
     )
   }
 }
 
-export default Assembly;
+export default Home;

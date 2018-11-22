@@ -5,6 +5,7 @@
     "module": "commonjs",
     "target": "es5",
     "lib": [
+      "es5",
       "es6",
       "dom",
       "es2017.object"
@@ -20,7 +21,7 @@
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "preserveConstEnums": true,
-    "noUnusedLocals": true,
+    // "noUnusedLocals": true,
     "skipLibCheck": true,
   },
   "exclude": [

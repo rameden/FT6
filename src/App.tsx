@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import * as React from 'react';
-import TestRouter from "src/guide/components/temp";
+import { BrowserRouter as Router } from "react-router-dom";
+import Guide from "src/guide/components/guide";
+import SidebarNavigation from "src/guide/components/navigation";
 import './App.css';
-// tslint:disable-next-line:ordered-imports
-// import TableofContents from "src/guide/components/tableOfContents";
 
 class FT6App extends React.Component {
 
@@ -12,7 +12,12 @@ class FT6App extends React.Component {
     return (
       <div className="App">
         <div className="container-fluid">
-          <TestRouter />
+          <Router>
+            <div className="row">
+              <SidebarNavigation />
+              <Guide />
+            </div>
+          </Router>
         </div>
       </div>
     );
