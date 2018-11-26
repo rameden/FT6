@@ -5,7 +5,7 @@ import { TableOfContents } from "src/guide/constants/guide";
 class Guide extends React.Component {
   public render(): JSX.Element {
     return (
-      <div className="col-md-auto">
+      <div className="col-md-10">
         <Switch>
           {TableOfContents.map((route, index) => (
             <Route
