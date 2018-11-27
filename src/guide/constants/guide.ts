@@ -9,6 +9,7 @@ export const TableOfContents = [
     component: Home,
     exact: true,
     path: "/",
+    sections:{},
     title: "Welcome"
   },
   {
@@ -17,9 +18,7 @@ export const TableOfContents = [
   {
     component: Wiring,
     path: "/wiring",
-    sections: {
-      "test":"test"
-    },
+    sections: {},
     title: "Wiring"
   },
 ];

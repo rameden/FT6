@@ -44,14 +44,12 @@ export const AssemblySections = {
       ...assemblySteps
     },
     title: "Frame Assembly",
-
   },
   [AssemblyFieldKey.XYAssembly]: {
     steps: {
       ...xySteps
     },
     title: "XY Assembly",
-
   }
 }
 export const assemblyNavigation = {
